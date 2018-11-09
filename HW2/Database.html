@@ -1,0 +1,146 @@
+
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<script src="Database.js"></script>
+<title>HomeWork 2</title>
+<script>
+const Q = new Database()
+Q.readStudent;
+Q.readCoruses;
+function dersBul(){
+ if(idNumber.value == '' ){
+ alert("İd giriniz!!!!!")
+                        
+ }else{
+ let a = Q.dersBul(idNumber.value);
+                        
+ let msg = "İd : "+a.student_id+"\t"+a.student_name+"\t"+a.student_gpa+"\t"+a.student_courses.length+"  Courses </br> "
+ for(let course of a.student_courses){
+ msg += course+"</br>"
+  }
+ out.innerHTML = msg
+    }
+}
+function bestGPA(){
+                
+let maxGpa = Q.findBest()
+out.innerHTML ="İd : "+maxGpa.student_id+"\t"+maxGpa.student_name+"\t"+maxGpa.student_gpa
+                
+}
+function randomStdId(){
+let s = Q.randomStdId();
+let a = Q.dersBul(s)
+                
+console.log(a)
+                
+let msg = "İd : "+a.student_id+"\t"+a.student_name+"\t"+a.student_gpa+"\t"+a.student_courses.length+"  Courses </br> "
+for(let course of a.student_courses){
+msg += course+"</br>"
+}
+out.innerHTML = msg
+}
+function bigGpa(){
+ if(Gpa.value == '' ){
+alert("Gpa giriniz!!!!!")
+}else{
+let a = Q.biggerThan(Gpa.value)
+out.innerHTML = Gpa.value+" ortalamadan yüksek öğrenci sayısı = "+a
+   }
+  }
+  function searchStudent(){
+  if(course_code.value == '' ){
+  alert("Kurs kodu giriniz!!!!!")
+   }else{
+let a = course_code.value
+let msg= Q.searchStudent(a)
+out.innerHTML = msg
+  }
+ }
+  function derslikBul(){
+ let a = room_code.value;
+ let msg = Q.derslikBul(a)
+ out.innerHTML = msg
+  }
+  function examDate(){
+ if(idNumber.value == '' ){
+ alert("İd giriniz!!!!!")
+ }else{
+ let a = Q.dersBul(idNumber.value);
+ let msg = "İd :"+a.student_id+"  Name :"+a.student_name+"\n"
+ msg += Q.sınavTakvimi(a)
+ out.innerHTML = msg
+ }
+ }
+ function addStudent(){
+ let id = idX.value;
+ let name = nameX.value;
+ let gpa = GpaX.value;
+ let student = new Student(idX.value, nameX.value, parseInt(GpaX.value));
+ Q.newStudent(student);
+ }
+ function addCourse(){
+ let a    = Q.newAddCourse(idY.value);
+ a.addCourse(courseY.value)
+ 
+ }
+</script></head>
+<body>
+     <h2 id="title">HomeWork 2</h2>
+     <hr>
+     <b>İd</b>   <input type="text" id="idX" style="width:100px; margin-left: 6px;">
+     <b>Name</b>   <input type="text" id="nameX" style="width:100px; margin-left: 6px;">
+     <b>Gpa</b>   <input type="text" id="GpaX" style="width:100px; margin-left: 6px;">
+     <p>
+     <input type="button" value="Öğrenci Ekle " onclick="addStudent()">
+     </p><hr>
+     <b>İd</b>   <input type="text" id="idY" style="width:100px; margin-left: 6px;">
+     <b>Course</b>   <input type="text" id="courseY" style="width:100px; margin-left: 6px;">
+     <p>
+     <input type="button" value="Ders Ekle " onclick="addCourse()">
+     </p><hr>
+     <p id="outA"></p>
+     <p>
+     <b>İd</b>   <input type="text" id="idNumber" style="width:100px; margin-left: 6px;">
+     </p>
+     <p>
+     <input type="button" value="Öğrencinin Sınav Takvimini " onclick="examDate()">
+     </p>
+                                        
+     <p>
+     <input type="button" value="Öğrenci Bul" onclick="dersBul()">
+     </p>
+     <p>
+     <input type="button" value="Best GPA" onclick="bestGPA()">
+     </p>
+     <p>
+     <input type="button" value="Random Student" onclick="randomStdId()">
+     </p>
+     <p>
+     </p><hr>
+     <b>Gpa</b>   <input type="text" id="Gpa" style="width:100px; margin-left: 70px;">  <input type="button" value=" > Gpa " onclick="bigGpa()">
+     <p></p>
+                                                        
+     <p>
+     <b>Kurs Kodu</b>   <input type="text" id="course_code" style="width:100px; margin-left: 20px;">  <input type="button" value=" Öğrenci Bul " onclick="searchStudent()">
+     </p>
+     <p>
+     <b>Derslik Kodu</b>   <input type="text" id="room_code" style="width:100px; margin-left: 6px;">  <input type="button" value=" Ders Bul " onclick="derslikBul()">
+     </p>
+                                                                
+                                                                
+     <hr>
+     <pre><p id="out">Result:</p></pre>
+     <hr>
+                                                                
+     <p>
+     </p><p>
+                                                                
+     </p>
+     <p>
+                                                                
+     </p>
+    <p>
+    </p>
+                                          
+</body></html>
