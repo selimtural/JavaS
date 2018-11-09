@@ -3,3 +3,4 @@ https://selimtural.github.io/JavaS/homework
 https://selimtural.github.io/JavaS/inspector.html
 https://selimtural.github.io/JavaS/index.html
 https://selimtural.github.io/JavaS/cw5.html
+https://selimtural.github.io/JavaS/HW2/Database.html
