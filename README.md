@@ -1,6 +1,7 @@
-https://selimtural.github.io/JavaS/Array%20cw2.html
-https://selimtural.github.io/JavaS/homework
-https://selimtural.github.io/JavaS/inspector.html
-https://selimtural.github.io/JavaS/index.html
-https://selimtural.github.io/JavaS/cw5.html
-https://selimtural.github.io/JavaS/HW2/Database.html
+1. [SAYAC](https://selimtural.github.io/JavaS/Array%20cw2.html)
+2. [HW1](https://selimtural.github.io/JavaS/homework)
+3. [İNSPECTOR](https://selimtural.github.io/JavaS/inspector.html)
+4. [İNDEX](https://selimtural.github.io/JavaS/index.html)
+5. [CW5](https://selimtural.github.io/JavaS/cw5.html)
+6. [HW2](https://selimtural.github.io/JavaS/HW2/Database.html)
+7. [CW6](https://selimtural.github.io/JavaS/CW6-1)
