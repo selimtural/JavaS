@@ -5,3 +5,4 @@
 5. [CW5](https://selimtural.github.io/JavaS/cw5.html)
 6. [HW2](https://selimtural.github.io/JavaS/HW2/Database.html)
 7. [CW6](https://selimtural.github.io/JavaS/CW6-1)
+8. [HW3](https://selimtural.github.io/JavaS/HW3)
