@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CW7 </title>
+</head>
+
+<script>
+"use strict";
+function Add(){
+var ad = Name.value
+eklenenler.push(ad);
+var adres = Adres.value;
+eklenenler.push(adres);
+var telefon = Number(Tel.value);
+eklenenler.push(telefon);
+var telefon2 = Number(Tel2.value);
+eklenenler.push(telefon2);
+
+
+}
+
+function makeRows(){
+
+let row = "<th></th>";
+    row += "<th>"+"Name"+"</th>";
+    row += "<th>"+"Adres"+"</th>";
+  row += "<th>"+"Ev tel"+"</th>";
+  row += "<th>"+"Cep tel"+"</th>";
+    let text = "<tr>"+row+"</tr>";
+    for (let i = 0; i < eklenenler.length/4; i++) {
+       row = "<th>"+"</th>";
+       
+     row +="<td>"+eklenenler[i*4]+"</td>";
+     row +="<td>"+eklenenler[i*4+1]+"</td>";
+     row +="<td>"+eklenenler[i*4+2]+"</td>";
+     row +="<td>"+eklenenler[i*4+3]+"</td>";
+       text += "<tr>"+row+"</tr>";
+    }
+   tablo.innerHTML = text;
+
+}
+function Print(){
+
+makeRows();
+}
+
+
+
+
+function Max(){
+let temp=0;
+maxDizi=[];
+  for(let i=0; i<eklenenler.length/4; i++){
+    if(temp==0)
+    temp=eklenenler[3];
+    
+    if(temp<eklenenler[i*4+3]){
+      temp=eklenenler[i*4+3];
+    
+    }
+
+  }
+  
+  for(let i=0; i<eklenenler.length/4; i++){
+   if(temp==eklenenler[i*4+3]){
+      maxDizi.push(eklenenler[i*4]);
+    maxDizi.push(temp);
+    break;
+   }
+  
+  }
+  let row = "<th></th>";
+    row += "<th>"+"Name"+"</th>";
+    row += "<th>"+"Adres"+"</th>";
+  let text2 = "<tr>"+row+"</tr>";
+  row = "<th>"+"</th>";
+       
+     row +="<td>"+maxDizi[0]+"</td>";
+     row +="<td>"+maxDizi[1]+"</td>";
+     console.log(temp);
+       text2 += "<tr>"+row+"</tr>";
+     
+     tablo3.innerHTML = text2;
+}
+
+function Güncelle(){ 
+Print();
+Max();
+
+}
+</script>
+<body>
+ <p>Telefon Rehberi </p> 
+<p>Name    = <input type=text   id=Name style="width:99px"> Ad Soyad</P>
+<p>Adres = <input type=text   id=Adres style="width:99px"> Açık Adres</P>
+<p>Tel   = <input type=number   id=Tel style="width:99px"> Ev telefonu</P>
+<p>Tel2   = <input type=number   id=Tel2 style="width:99px"> Cep telefonu</P>
+<p>
+
+<input type=button value="Add"  onClick="Add()">
+<input type=button value=" Print "  onClick="Print()">
+
+</p>
+<hr />
+<table id="tablo" >
+
+
+
+
+</table>
+<hr />
+<table id="tablo3">
+
+
+</table>
+
+
+
+Ref: 
+<a href="https://maeyler.github.io/JS/hard/Table%20maker.html" target="ExternalDocument">Table Examples</a>
+</body>
+
+
+<script>
+   
+    var eklenenler=[];
+  var maxDizi=[];
+</script>
+
+
+</html>
