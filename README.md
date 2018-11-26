@@ -13,3 +13,8 @@ Home Work
 2. [HW1](https://selimtural.github.io/JavaS/homework)
 6. [HW2](https://selimtural.github.io/JavaS/HW2/Database.html)
 8. [HW3](https://selimtural.github.io/JavaS/HW3)
+
+Yararlı Linkler
+
+[CodePen](https://codepen.io/pen/)
+[Animation](https://www.egonomik.com/2014/09/gelistiriciler-icin-10-css-efekt-kutuphanesi/)
