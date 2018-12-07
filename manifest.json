@@ -8,11 +8,11 @@
   "theme_color": "blue",
   "icons": [
     {
-      "src": "JavaS/CW7/face.png",
+      "src": "JavaS/geek.png",
       "sizes": "512x512",
       "type": "image/png"
     }, {
-      "src": "JavaS/CW7/face.png",
+      "src": "JavaS/geek.png",
       "sizes": "192x192",
       "type": "image/png"
     }
