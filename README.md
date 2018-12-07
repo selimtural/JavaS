@@ -1,9 +1,9 @@
 [Github](https://selimtural.github.io/JavaS/)
 
 Class Work
-1. [SAYAC](https://selimtural.github.io/JavaS/Array%20cw2.html)
-2. [İNSPECTOR](https://selimtural.github.io/JavaS/inspector.html)
-3. [İNDEX](https://selimtural.github.io/JavaS/index.html)
+1. [CW1](https://selimtural.github.io/JavaS/Array%20cw2.html)
+2. [CW2](https://selimtural.github.io/JavaS/inspector.html)
+3. [CW3](https://selimtural.github.io/JavaS/index.html)
 4. [CW5](https://selimtural.github.io/JavaS/cw5.html)
 5. [CW6](https://selimtural.github.io/JavaS/CW6-1)
 6. [CW7](https://selimtural.github.io/JavaS/CW7/CW7.html)
@@ -15,6 +15,7 @@ Home Work
 6. [HW2](https://selimtural.github.io/JavaS/HW2/Database.html)
 8. [HW3](https://selimtural.github.io/JavaS/HW3)
 9. [HW4](https://selimtural.github.io/JavaS/)
+
 Yararlı Linkler
 
 [CodePen](https://codepen.io/pen/)
