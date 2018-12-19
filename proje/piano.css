@@ -25,9 +25,9 @@ audio {
 }
 
 .piano {
-  padding: 5px;
+  padding: 230px;
   margin: 0 auto;
-  width: 550px;
+  width: 500px;
 }
 
 .piano-container, .piano-javascript {
@@ -92,3 +92,13 @@ audio {
   left: -10px;
   background-color: black;
 }
+h2 {
+     position: absolute;
+     left: 280px;
+     top: 365px;
+                      }
+h3 {
+     position: absolute;
+     left: 280px;
+     top: 215px;
+                      }

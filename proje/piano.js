@@ -22,7 +22,7 @@
   var keys =[
     'A2', 'Bb2', 'B2', 'C3', 'Db3', 'D3', 'Eb3', 'E3', 'F3', 'Gb3', 'G3', 'Ab3',
     'A3', 'Bb3', 'B3', 'C4', 'Db4', 'D4', 'Eb4', 'E4', 'F4', 'Gb4', 'G4', 'Ab4',
-    'A4', 'Bb4', 'B4', 'C5'
+    'A4', 'Bb4', 'B4'
   ];
 
   /* Corresponding keyboard keycodes, in order w/ 'keys'. */
@@ -31,9 +31,9 @@
   /*   lower register: Z -> M, , with A-L as black keys. */
   
   var codes = [
-     90,   83,    88,   67,   70,    86,   71,    66,   78,   74,    77,   75,
-     81,   50,    87,   69,   52,    82,   53,    84,   89,   55,    85,   56,
-     73,   57,    79,   80
+     65,   81,    83,   68,   87,    70,   69,    71,   72,   82,    74,   84,
+     75,   89,    76,   90,   85,    88,   79,    67,   86,   80,    66,   57,
+     78,   48,    77
   ];
   
   var pedal = 32; /* Keycode for sustain pedal. */
