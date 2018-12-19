@@ -26,8 +26,8 @@ audio {
 
 .piano {
   padding: 230px;
-  margin: 0 auto;
-  width: 500px;
+  
+  width: 1150px;
 }
 
 .piano-container, .piano-javascript {
@@ -94,11 +94,11 @@ audio {
 }
 h2 {
      position: absolute;
-     left: 280px;
+     left: 610px;
      top: 365px;
                       }
 h3 {
      position: absolute;
-     left: 280px;
+     left: 610px;
      top: 215px;
                       }
