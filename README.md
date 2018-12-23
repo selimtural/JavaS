@@ -18,7 +18,7 @@ Home Work
 
 Proje
 
-[Piano](https://selimtural.github.io/JavaS/proje/d1.html)
+1. [Piano](https://selimtural.github.io/JavaS/proje/d1.html)
 
 Yararlı Linkler
 
